@@ -16,7 +16,7 @@
     "runLevel": "page",
     "cronjob": false
   },
-  "dependencies": {
-    "@aikosia/automaton": "^0.4.9-6"
+  "devDependencies": {
+    "@aikosia/automaton": "^0.5.0"
   }
 }
