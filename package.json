@@ -1,0 +1,22 @@
+{
+  "name": "example-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "automaton exec",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "automaton": {
+    "version": "1.0.0",
+    "profile": "default",
+    "runLevel": "page",
+    "cronjob": false
+  },
+  "dependencies": {
+    "@aikosia/automaton": "^0.4.9-6"
+  }
+}
