@@ -11,7 +11,7 @@ class BotName extends Automaton{
      * Automaton runtime will pass data to this function depend on automaton->runLevel field at package.json
      */
     async run(page){
-        await page.goto("https://google.com");
+        await page.goto("https://aikosia.com");
     }
 }
 
