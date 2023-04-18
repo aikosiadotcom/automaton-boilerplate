@@ -16,7 +16,7 @@
   "scripts": {
     "start": "automaton exec",
     "test": "echo \"No test specified\"",
-    "release": "git add * && git commit -m \"New Feature\" && np --no-2fa"
+    "release": "git add * && git commit -m \"New Feature\" && git push origin && np --no-2fa"
   },
   "author": "firman",
   "license": "MIT",
