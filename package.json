@@ -1,15 +1,19 @@
 {
-  "name": "example-01",
-  "version": "1.0.0",
+  "name": "@aikosia/automaton-boilerplate",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "automaton exec",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\"",
+    "release": "np --no-2fa"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "firman",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
   "automaton": {
     "version": "1.0.0",
     "profile": "default",
@@ -17,6 +21,7 @@
     "cronjob": false
   },
   "devDependencies": {
-    "@aikosia/automaton": "^0.5.0"
+    "@aikosia/automaton": "^0.5.1",
+    "np": "^7.7.0"
   }
 }
