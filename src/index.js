@@ -1,4 +1,4 @@
-import { Automaton, Decorators } from "@aikosia/automaton";
+import Automaton, { Decorators } from "@aikosia/automaton";
 
 class BotName extends Automaton{
     constructor(){
@@ -7,7 +7,7 @@ class BotName extends Automaton{
 
     /**
      * Automaton runtime will pass data to this function depend on automaton->runParameter field at package.json
-     * @param {Object} context||page||null
+     * @param {Object} context|page|null - Parameter will be passed by parent class
      */
     @Decorators.delay
     async run(page){
