@@ -24,7 +24,8 @@
     "src"
   ],
   "automaton": {
-    "_version_": "1.0.0",
+    "version": "1.0.0",
+    "type":"rest",
     "profile": "default",
     "runParameter": "page",
     "cronjob": false
