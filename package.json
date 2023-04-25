@@ -29,7 +29,7 @@
   ],
   "automaton": {
     "version": "1.0.0",
-    "template": "rest",
+    "template": "crawler",
     "profile": "default",
     "runParameter": "page",
     "cronjob": false
