@@ -1,4 +1,4 @@
-import Automaton, { Decorators } from "@aikosia/automaton";
+import Automaton, { Decorators } from "@aikosia/automaton-core";
 
 class BotName extends Automaton{
     constructor(){

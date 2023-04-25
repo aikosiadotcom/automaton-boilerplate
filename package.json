@@ -1,6 +1,6 @@
 {
   "name": "@aikosia/automaton-boilerplate",
-  "version": "0.3.0",
+  "version": "0.9.0",
   "description": "",
   "main": "./src/index.js",
   "type": "module",
@@ -14,7 +14,7 @@
     "automation"
   ],
   "scripts": {
-    "start": "node ./node_modules/@aikosia/automaton-cli/src exec",
+    "start": "cross-env NODE_ENV=development node ./node_modules/@aikosia/automaton-cli/src exec",
     "release": "node ./script/release.js",
     "fix-release": "np --no-2fa"
   },
@@ -25,14 +25,15 @@
   ],
   "automaton": {
     "version": "1.0.0",
-    "template":"rest",
+    "template": "rest",
     "profile": "default",
     "runParameter": "page",
     "cronjob": false
   },
   "devDependencies": {
-    "@aikosia/automaton": "^0.8.0",
-    "@aikosia/automaton-cli": "^0.3.1",
+    "@aikosia/automaton-cli": "^0.9.0",
+    "@aikosia/automaton-core": "^0.9.0",
+    "cross-env": "^7.0.3",
     "np": "^7.7.0",
     "read-pkg": "^8.0.0"
   }
