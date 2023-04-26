@@ -1,7 +1,7 @@
 {
   "name": "@aikosia/automaton-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate for automaton create command ",
   "main": "./src/index.js",
   "type": "module",
   "repository": {

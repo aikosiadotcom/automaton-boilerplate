@@ -27,7 +27,7 @@ after you run, automaton runtime will compile your code into .automaton
 after you finish testing, you run below command to publish to npm
 
 ```
-npm run publish
+npm run release
 ```
 
 
