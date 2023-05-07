@@ -1,0 +1,7 @@
+{
+    "version": "1.0.0",
+    "template": "crawler",
+    "profile": "default",
+    "runParameter": "page",
+    "cronjob": false
+}

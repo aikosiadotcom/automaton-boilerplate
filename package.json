@@ -2,8 +2,9 @@
   "name": "@aikosia/automaton-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate Project For Automaton Framework",
+  "author": "firman",
+  "license": "MIT",
   "main": "./src/index.js",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/aikosiadotcom/automaton-boilerplate"
@@ -15,28 +16,48 @@
     "puppeteer",
     "playwright",
     "chromium",
-    "automation"
+    "automation",
+    "boilerplate",
+    "template",
+    "project"
   ],
-  "scripts": {
-    "start": "cross-env NODE_ENV=development node ./node_modules/.bin/automaton exec",
-    "release": "node ./script/release.js"
+  "type": "module",
+  "engines": {
+    "npm": ">=8.19.2",
+    "node": ">=18.12.1"
   },
-  "author": "firman",
-  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "src"
   ],
-  "automaton": {
-    "version": "1.0.0",
-    "template": "crawler",
-    "profile": "default",
-    "runParameter": "page",
-    "cronjob": false
+  "scripts": {
+    "start": "cross-env NODE_ENV=development automaton exec",
+    "release": "asterisker -l && git add * && git-cz && git pull origin && git push origin"
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "asterisker": [
+    "@aikosia/automaton-core",
+    "@aikosia/automaton-cli"
+  ],
   "devDependencies": {
+    "@aikosia/asterisker": "^1.2.1",
     "@aikosia/automaton-cli": "^1.0.0",
-    "@aikosia/automaton-core": "^1.0.7",
+    "@aikosia/automaton-core": "^1.1.6",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^10.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.1",
+    "commitizen": "^4.3.0",
     "cross-env": "^7.0.3",
-    "read-pkg": "^8.0.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "read-pkg": "^8.0.0",
+    "semantic-release": "^21.0.2"
   }
 }
