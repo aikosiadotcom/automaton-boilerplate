@@ -1,7 +1,7 @@
 {
   "name": "@aikosia/automaton-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate for automaton create command ",
+  "description": "Boilerplate Project For Automaton Framework",
   "main": "./src/index.js",
   "type": "module",
   "repository": {
@@ -18,9 +18,8 @@
     "automation"
   ],
   "scripts": {
-    "start": "cross-env NODE_ENV=development node ./node_modules/@aikosia/automaton-cli/src exec",
-    "release": "node ./script/release.js",
-    "fix-release": "np --no-2fa"
+    "start": "cross-env NODE_ENV=development node ./node_modules/.bin/automaton exec",
+    "release": "node ./script/release.js"
   },
   "author": "firman",
   "license": "MIT",
@@ -36,9 +35,8 @@
   },
   "devDependencies": {
     "@aikosia/automaton-cli": "^1.0.0",
-    "@aikosia/automaton-core": "^1.0.0",
+    "@aikosia/automaton-core": "^1.0.7",
     "cross-env": "^7.0.3",
-    "np": "^7.7.0",
     "read-pkg": "^8.0.0"
   }
 }

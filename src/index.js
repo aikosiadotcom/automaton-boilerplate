@@ -6,10 +6,10 @@ class BotName extends Automaton{
     }
 
     /**
-     * Automaton runtime will pass data to this function depend on automaton->runParameter field at package.json
-     * @param {Object} context|page|null - Parameter will be passed by parent class
+     * Automaton Runtime will pass arg to this function depend on automaton->runParameter field at package.json
+     * @param {} context|page|null - Parameter will be passed by parent class
      */
-    @Decorators.delay
+    @decorators.delay
     async run(page){
         await page.goto("https://www.google.com/doodles");
     }
