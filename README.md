@@ -20,7 +20,7 @@ Don't forget to add **NPM_AUTH_TOKEN** on your github project > settings > secre
 npm start
 ```
 
-after you run, automaton runtime will compile your code into .automaton
+after you run, automaton runtime will compile your code into folder .automaton on your root directory
 
 ## PUBLISH
 
