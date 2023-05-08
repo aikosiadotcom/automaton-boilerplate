@@ -1,12 +1,7 @@
 {
   "name": "@aikosia/automaton-boilerplate",
-<<<<<<< HEAD
-  "version": "0.10.0",
-  "description": "Boilerplate Project Of Automaton Framework",
-=======
   "version": "0.11.0",
-  "description": "Boilerplate Project For Automaton Framework",
->>>>>>> 8e71fff9ff2a978e274697fb1141d168caa21090
+  "description": "Boilerplate Project Of Automaton Framework",
   "author": "firman",
   "license": "MIT",
   "main": "./src/index.js",
