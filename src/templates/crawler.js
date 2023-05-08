@@ -7,7 +7,7 @@ class BotName extends Automaton{
 
     /**
      * Run the bot
-     * @param {null | object} arg - This function will received one of those values 'context'|'page'|'null' based on runParameter field in automaton.json
+     * @param {null | object} arg - This function will received one of those values 'context'|'page'|'null' based on runParameter field in automaton.config.json
      */
     @Decorators.delay({min:8,max:16})
     async run(page){
