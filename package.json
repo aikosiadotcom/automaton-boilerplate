@@ -47,7 +47,7 @@
   ],
   "devDependencies": {
     "@aikosia/asterisker": "^1.2.1",
-    "@aikosia/automaton-cli": "^1.0.0",
+    "@aikosia/automaton-cli": "^1.1.0",
     "@aikosia/automaton-core": "^1.2.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
