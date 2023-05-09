@@ -1,16 +1,22 @@
 import Automaton, { Decorators } from "@aikosia/automaton-core";
 
 class BotName extends Automaton{
+    #context;
+
     constructor(){
         super({key:"BotName"});
     }
 
     /**
      * Run the bot
-     * @param {null | object} page - This function will received one of those values 'context'|'page'|'null' based on runParameter field in automaton.config.json
+     * @param {BrowserContext} context - This function will received one of those values 'context'|'page'|'null' based on runParameter field in automaton.config.json
      */
-    async run(page){
-        await page.goto("https://aikosia.com");
+    async run(context){
+        /**
+         * @see https://playwright.dev/docs/api/class-browsercontext
+         * @type {BrowserContext} 
+         */
+        this.#context = context;
     }
 
     /**
@@ -25,7 +31,7 @@ class BotName extends Automaton{
      * @param {string} name 
      * @returns {string}
      */
-    @Decorators.delay({min:8,max:16})
+    @Decorators.delay({min:8,max:16,meta:{name:"BotName"}})
     async print(name){
         return `Hello, ${name}`;
     }

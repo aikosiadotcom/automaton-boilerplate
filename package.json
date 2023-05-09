@@ -33,7 +33,7 @@
     "src"
   ],
   "scripts": {
-    "start": "cross-env NODE_ENV=development automaton exec",
+    "start": "cross-env NODE_ENV=development AUTOMATON_DISABLE_REMOTE_LOG=true automaton exec",
     "release": "asterisker -l && git add * && git-cz && git pull origin && git push origin"
   },
   "config": {
@@ -47,8 +47,8 @@
   ],
   "devDependencies": {
     "@aikosia/asterisker": "^1.2.1",
-    "@aikosia/automaton-cli": "^1.1.0",
-    "@aikosia/automaton-core": "^1.2.1",
+    "@aikosia/automaton-cli": "^1.1.1",
+    "@aikosia/automaton-core": "^1.4.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
