@@ -33,7 +33,7 @@
     "src"
   ],
   "scripts": {
-    "start": "cross-env NODE_ENV=development AUTOMATON_DISABLE_REMOTE_LOG=true automaton exec",
+    "start": "cross-env NODE_ENV=development AUTOMATON_DISABLE_REMOTE_LOG=true automaton exec -h http://localhost -p 3000",
     "release": "asterisker -l && git add * && git-cz && git pull origin && git push origin"
   },
   "config": {
