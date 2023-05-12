@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [0.13.1](https://github.com/aikosiadotcom/automaton-boilerplate/compare/v0.13.0...v0.13.1) (2023-05-09)
+
+
+### Bug Fixes
+
+* adjusment ([ed1e454](https://github.com/aikosiadotcom/automaton-boilerplate/commit/ed1e454396559ae3c8462e8b2456347b054a5a9d))
+
 # [0.13.0](https://github.com/aikosiadotcom/automaton-boilerplate/compare/v0.12.0...v0.13.0) (2023-05-08)
 
 
